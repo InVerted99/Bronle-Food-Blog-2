@@ -1,0 +1,139 @@
+/* Sidebar */
+.sidebar {
+  flex: 1 1 250px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #3a5221;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  min-width: 250px;
+}
+
+.sidebar img {
+  width: 100%;
+  height: 300px; /* UPDATED */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgb(0 0 0 / 0.15);
+}
+
+.quote-sidebar {
+  background-color: #ef8a1f;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.quote-sidebar h3 {
+  color: white;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: #f3ebc5;
+  box-shadow: 0 0 6px rgb(0 0 0 / 0.1);
+  gap: 10px;
+}
+
+.follow-us h4 {
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #3a5221;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a5221;
+  color: #f3ebc5;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon svg {
+  fill: #f3ebc5;
+  width: 16px;
+  height: 16px;
+}
+
+.social-icon:hover {
+  background-color: #ef8a1f;
+  color: white;
+}
+
+.email-signup p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #39531a;
+  text-transform: uppercase;
+}
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+#emailForm input[type="text"],
+#emailForm input[type="email"] {
+  padding: 10px 14px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-family: Georgia, serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#emailForm input::placeholder {
+  font-weight: 500;
+  color: #888;
+}
+
+/* UPDATED BUTTON WIDTH & CENTER */
+.send-updates-btn,
+.submit-btn {
+  background-color: #3a5221;
+  color: #f3ebc5;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 26px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  text-transform: uppercase;
+}
+
+.send-updates-btn:hover,
+.submit-btn:hover {
+  background-color: #2e3e17;
+}

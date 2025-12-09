@@ -1,0 +1,107 @@
+/* Comment Form Section */
+.comments-section {
+  padding: 30px 40px;
+  background-color: #f3ebc5;
+  border-radius: 6px;
+  margin: 50px 0;
+}
+
+.comments-section h3 {
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #39531a;
+  font-size: 1.5rem;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 40%;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 150px;
+  width: 100%;
+}
+
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+  font-weight: 500;
+  color: #7b7b7b;
+}
+
+.rating-input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-input label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  display: block;
+  color: #39531a;
+  letter-spacing: 0.04em;
+}
+
+.stars-input-con {
+  display: flex;
+  gap: 6px;
+}
+
+.stars-input-con input[type="radio"] {
+  display: none;
+}
+
+.stars-input-con label {
+  font-size: 1.8rem;
+  color: #f5d63b;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+
+.submit-comment-btn {
+  background-color: #ef8a1f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+}
+
+.submit-comment-btn:hover {
+  background-color: #d77a11;
+}
+
+@media screen and (max-width: 600px) {
+  .comment-form input[type="text"], 
+  .comment-form input[type="email"] {
+    width: 100%;
+  }
+}

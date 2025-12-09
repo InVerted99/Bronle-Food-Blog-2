@@ -1,0 +1,178 @@
+/* Navbar */
+.navbar {
+  background-color: #3a5221; /* dark olive green */
+  color: white;
+  font-family: "Montserrat", "Playfair Display";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 30px;
+}
+
+.nav-wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure vertical alignment */
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: "Inspiration", cursive;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-menu li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease; /* Smooth transitions for all effects */
+}
+
+.navbar-menu li a:hover {
+  border-bottom-color: #ef8a1f; /* Bottom line on hover */
+  color: #ef8a1f; /* Highlight color on hover */
+  /* No transform on hover */
+}
+
+.navbar-menu li a.active {
+  border-bottom-color: #ef8a1f; /* Bottom line when active */
+  color: #ef8a1f; /* Highlight color when active */
+  transform: translateY(10px); /* Moves up only when active */
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden by default, shown on mobile */
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: background-color 0.2s ease;
+}
+
+/* Modal Overlay (now a sidebar) */
+.modal-header {
+  position: fixed;
+  top: 70px; /* Starts below the header (adjust if header height changes) */
+  right: -30%; /* Hidden off-screen initially */
+  width: 30%;
+  height: calc(100vh - 80px); /* Full height from header bottom to viewport bottom */
+  background-color: #3a5221; /* Match navbar background */
+  z-index: 1001;
+  transition: right 0.3s ease; /* Smooth slide-in */
+  overflow-y: none; /* Allow scrolling if content overflows */
+}
+
+.modal-header.show {
+  right: 0; /* Slide in from the right */
+}
+
+.modal-header-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #ef8a1f;
+}
+
+.modal-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1; /* Take up remaining space */
+}
+
+.modal-menu li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  display: block;
+  text-align: center;
+}
+
+.modal-menu li a:hover {
+  border-bottom-color: #ef8a1f;
+  color: #ef8a1f;
+}
+
+.modal-menu li a.active {
+  border-bottom-color: #ef8a1f;
+  color: #ef8a1f;
+}
+
+/* Responsive: Mobile (600px and below) */
+@media (max-width: 600px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-wrapper {
+    justify-content: space-between;
+  }
+  
+  .modal-header {
+    width: 40%;
+    right: -50%;
+  }
+  
+  .modal-header.show {
+    right: 0;
+  }
+}
+
+

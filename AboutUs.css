@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+.container {
+    font-family: 'Playfair Display', serif;
+    max-width: 1180px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 40px 0;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    padding: 20px 0;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.about-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-section h1 {
+    font-family: 'Playfair Display', serif;
+    color: #344F1F;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Team Section */
+.team-section {
+    background: #344F1F;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.team-section h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.team-section p {
+    font-family: 'Bitter', serif;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.team-divider {
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+/* Individual Profile Cards */
+.idv-profile {
+    font-family: 'Playfair Display', serif;
+    background-color: #F9F5F0;
+    display: flex;
+    gap: 20px;
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.idv-profile img {
+    width: 160px;
+    max-width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.idv-profile p {
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+}
+
+/* Social Buttons */
+.socials {
+    background-color: #344F1F;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 2px solid #344F1F;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.25s;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .about-section img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Team Section */
+    .idv-profile {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .idv-profile img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .idv-profile p {
+        font-size: 14px;
+    }
+}
